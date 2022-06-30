@@ -38,6 +38,8 @@ dependencies {
     //testImplementation 'org.springframework.session:spring-session-jdbc'
 
     testImplementation 'org.springframework.security:spring-security-test'
+
+    implementation 'org.mariadb.jdbc:mariadb-java-client'
 }
 test { // (2)
     useJUnitPlatform()
