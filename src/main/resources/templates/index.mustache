@@ -6,14 +6,14 @@
         <div class="col-md-6">
             <!--글 등록 버튼을 누르면 /posts/save로 이동합니다-->
             <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
-            {{#userName}}
-                Logged in as: <span id="user">{{userName}}</span>
+            {{#user_name}}
+                Logged in as: <span id="user">{{user_name}}</span>
                 <a href="/logout" class="btn btn-info active" role="button">Logout</a>
-            {{/userName}}
-            {{^userName}}
+            {{/user_name}}
+            {{^user_name}}
                 <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
                 <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
-            {{/userName}}
+            {{/user_name}}
         </div>
     </div>
     <br>
