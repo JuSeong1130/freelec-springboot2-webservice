@@ -24,7 +24,7 @@ public class IndexController {
     private final PostsService postsService;
     private final HttpSession httpSession;
 
-
+    //안녕하세요
     @GetMapping("/")
     public String index(Model model , @LoginUser SessionUser user) {
         //Page 150
